@@ -1,0 +1,31 @@
+{
+  "说明": "带@的key是不带@的说明",
+  "trade": {
+    "meta_version": "v1",
+    "@meta_version": "目前可以选择的版本再metas文件夹下, 填入其文件夹名即可, 如v1, v2, v3",
+    "trade_size_factor": 1,
+    "@trade_size_factor": "多少倍下单量，默认1倍",
+    "tactics_flag": 0,
+    "@tactics_flag": "机器人消息参数，1为钉钉确认策略计算是否正常，2为钉钉确认ws接收数据是否正常，3为打印确认ws接收数据是否正常,4为打印确认策略计算是否正常。",
+    "only_msg": 0,
+    "@only_msg": "是否仅发送微信消息提醒，0为默认值，下单并发送微信消息,1仅发送微信提醒不下单",
+    "win_flag": 1,
+    "@win_flag": "是否开启追踪止盈，0为默认不开启，1为开启",
+    "strategy": {
+      "select_symbol_groups":
+      {
+        "customized": ["BTCBUSD","ETHBUSD"]
+      }
+    }
+  },
+  "system": {
+    "timezone": "UTC",
+    "print_error": false,
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "password": "",
+      "db_index": 0
+    }
+  }
+}

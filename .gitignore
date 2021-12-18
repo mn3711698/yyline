@@ -1,10 +1,14 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
+*.py[co]
 *$py.class
 
 # C extensions
-*.so
+#*.so
+#*.pyd
+
+base.py
+setup.py
 
 # Distribution / packaging
 .Python
@@ -127,3 +131,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+.idea/
+
+gmlog_print.txt
+strategies/base.pyd
+strategies/base.so
