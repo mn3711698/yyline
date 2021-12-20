@@ -1,18 +1,18 @@
 {
   "BTCBUSD": {
     "trading_size": 0.001,
-    "win_arg": 0.009,
+    "win_arg": 0.0115,
     "loss_arg": 0.01,
-    "trace_win": 0.0004,
+    "trace_win": 0.0002,
     "long_sold": 54.2,
     "short_bought": 29.2
   },
   "ETHBUSD": {
     "trading_size": 0.002,
-    "win_arg": 0.0095,
+    "win_arg": 0.0115,
     "loss_arg": 0.01,
-    "trace_win": 0.0004,
-    "long_sold": 58.2,
-    "short_bought": 28.2
+    "trace_win": 0.0002,
+    "long_sold": 56.2,
+    "short_bought": 29.2
   }
 }
