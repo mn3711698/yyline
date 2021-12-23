@@ -79,11 +79,11 @@ class BinanceDataWebsocket(BaseWebsocket):
                     }
                     event = Event(EVENT_BAR, {"data": hy_klike})
                     engine.put(event)
-                    time.sleep(0.5)
-                    event = Event(EVENT_TIME_LONG, {"data": int(ev_time), "symbol": symbol})
-                    engine.put(event)
-                    event = Event(EVENT_TIME_SHORT, {"data": int(ev_time), "symbol": symbol})
-                    engine.put(event)
+
+                    # event = Event(EVENT_TIME_LONG, {"data": int(ev_time), "symbol": symbol})
+                    # engine.put(event)
+                    # event = Event(EVENT_TIME_SHORT, {"data": int(ev_time), "symbol": symbol})
+                    # engine.put(event)
         else:
             print(channel, data)
 

@@ -3,6 +3,7 @@ import requests
 import traceback
 import time
 import json
+import datetime
 from config import dingding_token, wechat_qyapi_key, wx_openid, print_error
 
 
@@ -76,6 +77,13 @@ def getToday(formats=3):
         x = time.strftime("%Y年%m月%d日 %H:%M", date_ary)
     else:
         x = time.strftime("%Y-%m-%d %H:%M:%S", date_ary)
+    return x
+
+
+def get_utc_time():
+    a = datetime.datetime.utcnow().timestamp()
+    date_ary = time.localtime(a + 8 * 60 * 60)
+    x = time.strftime("%Y-%m-%d %H:%M:%S", date_ary)
     return x
 
 
