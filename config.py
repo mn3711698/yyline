@@ -5,19 +5,24 @@
 import redis
 import json
 import pytz
+import os
 # 注意：
 #    持仓方向为单向,不会设置杠杆
 #    下边的dingding_token,wx_openid为空的话是不会发送钉钉消息和公众号消息
 
 version_flag = '20211214'
-
-with open(r'must_edit_config.json', encoding='utf-8') as edit_file:
-    edit_config_dict = json.load(edit_file)
-edit_config = edit_config_dict
+must_edit_config_name = r'must_edit_config.json'
 
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
 config_raw = config_dict
+
+if os.path.isfile(must_edit_config_name):
+    with open(r'must_edit_config.json', encoding='utf-8') as edit_file:
+        edit_config_dict = json.load(edit_file)
+    edit_config = edit_config_dict
+else:
+    edit_config = config_raw['important']
 
 meta_version = config_dict['trade']['meta_version']
 meta_path = rf'metas/{meta_version}'

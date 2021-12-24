@@ -1,5 +1,23 @@
 {
   "说明": "带@的key是不带@的说明",
+  "important": {
+    "说明": "带@的key是不带@的说明",
+    "api_key": "",
+    "@api_key": "币安API的key",
+    "api_secret": "",
+    "@api_secret": "币安API的secret",
+    "ding_talk_token": "",
+    "@ding_talk_token": "ding_talk_token是钉钉webhook的access_token值,和企业微信机器人二选一即可",
+    "wechat_qyapi_key": "",
+    "@wechat_qyapi_key": "企业微信机器人的key值,每分钟不超过20条,和钉钉二选一即可",
+    "wechat_open_id": "",
+    "@wechat_open_id": "wechat_open_id是关注公从号'简道斋'后发送openid得到的那一串字符就是这个",
+    "leverage": 5,
+    "@leverage": "下单杠杆倍数",
+    "PositionSide": 0,
+    "@PositionSide": "允许下单的方向,取值范围0,1,2三个值。0为多空都下单,1为仅多单,2为仅空单.多空,0ls,1l,2s"
+  },
+  "@important": "替代must_edit_config.json的功能, 如果must_edit_config.json不存在, 则使用该配置",
   "trade": {
     "meta_version": "v1",
     "@meta_version": "目前可以选择的版本再metas文件夹下, 填入其文件夹名即可, 如v1, v2, v3",
