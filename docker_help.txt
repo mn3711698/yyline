@@ -49,15 +49,15 @@ docker rm <策略的唯一标识> 可以删除策略, 但是必须先停止
 单一模式:
 
 默认币种:
-docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211224.1.0.0 python Run.py
+docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211225.1.0.0 python Run.py
 
 预设币种:
-docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211224.1.0.0 python Run.py @select_symbols_1
+docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211225.1.0.0 python Run.py @select_symbols_1
 
 
 双模式
 默认币种:
-docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json -v <config-dir>/must_edit_config.json:/var/games/yyline/must_edit_config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211224.1.0.0 python Run.py
+docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json -v <config-dir>/must_edit_config.json:/var/games/yyline/must_edit_config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211225.1.0.0 python Run.py
 
 预设币种:
-docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json -v <config-dir>/must_edit_config.json:/var/games/yyline/must_edit_config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211224.1.0.0 python Run.py @select_symbols_1
+docker run -d -v <config-dir>/config.json:/var/games/yyline/config.json -v <config-dir>/must_edit_config.json:/var/games/yyline/must_edit_config.json --restart=always --name <策略名> flamhaze5946/mrmv-yy-trade-lite:20211225.1.0.0 python Run.py @select_symbols_1
