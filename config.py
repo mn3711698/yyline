@@ -10,7 +10,7 @@ import os
 #    持仓方向为单向,不会设置杠杆
 #    下边的dingding_token,wx_openid为空的话是不会发送钉钉消息和公众号消息
 
-version_flag = '20211225'
+version_flag = '20211231'
 must_edit_config_name = r'must_edit_config.json'
 
 with open(r'config.json', encoding='utf-8') as config_file:
